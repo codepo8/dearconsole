@@ -1,2 +1,5 @@
 markdown: kramdown
 highlighter: rouge
+collections:
+  scripts:
+    output: true

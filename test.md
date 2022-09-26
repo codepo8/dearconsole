@@ -1,5 +1,8 @@
-  <ul class="tips">
-  {%- for post in collections.all -%}
-    <li class="hover-box tip"><a href="{{ post.url }}">x{{ post.data.title }}</a></li>
-  {%- endfor -%}
-  </ul>
+{% for s in site.scripts %}
+  <h2>
+    <a href="{{ s.url }}">
+      {{ s.name }} - {{ s.position }}
+    </a>
+  </h2>
+  <p>{{ s.content | markdownify }}</p>
+{% endfor %}
