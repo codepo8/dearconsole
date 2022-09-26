@@ -2,7 +2,7 @@
 <ul>
 {% for s in site.scripts %}
   <li>
-    <a href="dearconsole/{{ s.url }}">
+    <a href="/dearconsole{{ s.url }}">
       {{ s.name }} - {{ s.position }}
     </a>
   </li>
