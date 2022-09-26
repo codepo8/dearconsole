@@ -1,8 +1,10 @@
+
+<ul>
 {% for s in site.scripts %}
-  <h2>
-    <a href="{{ s.url }}">
+  <li>
+    <a href="dearconsole/{{ s.url }}">
       {{ s.name }} - {{ s.position }}
     </a>
-  </h2>
-  <p>{{ s.content | markdownify }}</p>
+  </li>
 {% endfor %}
+</ul>
