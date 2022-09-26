@@ -1,4 +1,10 @@
-.highlight  { background: #ffffff; }
+.highlight {
+    background: rgb(230, 230, 230);
+    max-height: 300px;
+    overflow: scroll;
+    border: 1px #C1C1C1;
+    border-radius: 3px;
+}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
@@ -64,10 +70,3 @@
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .lineno::selection {background-color: transparent;} /* Other major browsers */s
 
-.highlight {
-    background: rgb(230, 230, 230);
-    max-height: 300px;
-    overflow: scroll;
-    border: 1px #C1C1C1;
-    border-radius: 3px;
-}
