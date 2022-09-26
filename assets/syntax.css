@@ -63,3 +63,11 @@
 .highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;} 
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .lineno::selection {background-color: transparent;} /* Other major browsers */s
+
+.highlight {
+    background: rgb(230, 230, 230);
+    max-height: 300px;
+    overflow: scroll;
+    border: 1px #C1C1C1;
+    border-radius: 3px;
+}
