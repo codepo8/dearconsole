@@ -2,9 +2,11 @@ body {
   background:var(--background);
   color: var(--text);
   font-family: "Open Sans", "segoe ui", helvetica, arial, sans-serif;
-  font-size: calc(.7em + 1vw);
+  font-size: calc(.5em + 1vw);
   margin: 0;
-  padding: 0;
+}
+article {
+  padding: 0 2em;
 }
 
 h1 {
@@ -56,17 +58,9 @@ footer a {
   height: 100%;
 }
 div#snippets {
-  position: relative;
+  display:flex;
+  flex-direction: column;  
 }
-div#snippets figure {
-  padding-right: 2em;
-}
-div#snippets button {
-  position: absolute;
-  top: .7em;
-  right: .2em;
-}
-
 #snippets li {
   display: flex;
 }
@@ -85,20 +79,44 @@ button.copy {
   height: 1em;
   cursor: pointer;
 }
+button.copytext {
+  align-self: self-end;
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  text-align: center;
+  color: var(--text);
+  font-size: 0.9em;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid var(--codeborder);
+  border: 1px 1px 0 1px;
+}
 button.copy svg {
   width: 1.5em;
   height: 1.5em;
   stroke: var(--link);
 }
-
-div.highlight {
-  padding: 0 .5em;
+figure {
+  margin: 0;
+  padding: 0;
+}
+.highlight {
   color: var(--codetext);
   background: var(--codebackground);;
-  max-height: 300px;
-  overflow: scroll;
   border: 1px var(--codeborder) solid;
   border-radius: 3px;
+  padding: .5em;
+}
+.highlight .highlight {
+  border: none;
+  padding: 0;
+}
+div.highlight {
+  padding: 0 .5em;
+  max-height: 300px;
+  overflow: scroll;
 }
 p code {
   color: var(--codetext);
