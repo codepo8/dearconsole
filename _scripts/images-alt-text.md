@@ -12,5 +12,5 @@ copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n"))
 ```
 
 ```javascript
-{{ page.codeexample | replace: '±', '\"'}}
+{{ page.codeexample | replace: '±', "'"}}
 ```
