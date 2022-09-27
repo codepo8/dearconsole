@@ -11,4 +11,3 @@ copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n"))
 ```
 {% capture snippet %}copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n")){% endcapture%}
 
-{{ snippet }}
