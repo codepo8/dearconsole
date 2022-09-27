@@ -328,6 +328,7 @@ button.copy svg {
 }
 
 div.highlight {
+  padding: 0 .5em;
   color: var(--codetext);
   background: var(--codebackground);;
   max-height: 300px;
