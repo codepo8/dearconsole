@@ -2,7 +2,7 @@
 title: Dear Console, give me a list of all the images in the document with their alternative text
 name: Give me a list of all the images in the document with their alternative text
 layout: default
-codeexample: 'copy($$(±img±).map(i => `${i.alt}: ${i.src}`).join(±\n±))'
+codeexample: 'copy($$(±1img±1).map(i => `${i.alt}: ${i.src}`).join(±1\n±1))'
 ---
 
 {% highlight javascript %}

@@ -7,7 +7,7 @@
   <article class="standalone">
       <h1>{{ page.title }}</h1>
       <div id="snippets">
-        <button class="copytext" data-snippet="{{ page.codeexample | replace: '±', "'"}}">copy</button>
+        <button class="copytext" data-snippet="{{ s.codeexample | replace: '±1', "'" | replace: '±2', '\n' | replace '±3', '\t'}}">copy</button>
         {{ content }}
       </div>    
       <p class="back"><a href="/dearconsole/">Show all "Dear Console" snippets…</a></p>

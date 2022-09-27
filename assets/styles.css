@@ -10,14 +10,14 @@ article {
 }
 
 h1 {
-  font-size: max(10vw, 14px);
+  font-size: 3em;
   font-family: Pacifico,sans-serif;
   font-weight: normal;
   color: var(--h1colour);
 }
 .index h1 {
   font-family: "Pacifico", sans-serif;
-  font-size: 7em;
+  font-size: max(10vw, 14px);
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -73,14 +73,16 @@ div#snippets {
 }
 #snippets li {
   display: flex;
+  margin-bottom: .5em;
 }
-#snippets ul {
+ul#snippets {
   margin: 1em 0;
   padding: 0;
 }
 #snippets li > a {
   display:block;
   padding: .2em .5em;
+
   line-height: 1.2;
   flex: 7;
   color: var(--link);
