@@ -186,7 +186,7 @@ h1 {
   color: var(--h1colour);
 }
 .index h1 {
-  font-family: "Pacifico Regular", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-size: 1.3em;
   font-weight: normal;
   color: var(--h1colour);
