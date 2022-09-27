@@ -327,7 +327,7 @@ button.copy svg {
   stroke: var(--link);
 }
 
-.highlight {
+div.highlight {
   color: var(--codetext);
   background: var(--codebackground);;
   max-height: 300px;
@@ -335,7 +335,7 @@ button.copy svg {
   border: 1px var(--codeborder) solid;
   border-radius: 3px;
 }
-code {
+p code {
   color: var(--codetext);
   background: var(--codebackground);;
   border: 1px var(--codeborder) solid;
