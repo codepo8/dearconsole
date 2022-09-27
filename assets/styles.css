@@ -8,8 +8,9 @@ body {
 article {
   padding: 0 2em;
 }
+
 h1 {
-  font-size: 2.5em;
+  font-size: max(10vw, 14px);
   font-family: Pacifico,sans-serif;
   font-weight: normal;
   color: var(--h1colour);
@@ -73,8 +74,18 @@ div#snippets {
 #snippets li {
   display: flex;
 }
+#snippets ul {
+  margin: 1em 0;
+  padding: 0;
+}
 #snippets li > a {
-  flex: 3;
+  display:block;
+  padding: .2em .5em;
+  line-height: 1.2;
+  flex: 7;
+  color: var(--link);
+  text-decoration: none;
+  font-size: 1.1em;
 }
 button.copy {
   flex: 1;
