@@ -3,9 +3,7 @@ copypopup.classList.add('popup');
 copypopup.textContent = '☑️ Copied!';
 document.body.appendChild(copypopup);
 
-copied = e => {
-    e.preventDefault();
-    const snippet = e.target.parentNode.dataset.snippet;
+showcopied = snippet => {
     navigator.clipboard.writeText(snippet);
     console.log(snippet);
     document.body.classList.add('copied');
@@ -14,10 +12,12 @@ copied = e => {
 
 document.querySelector('#snippets')?.addEventListener('click', e => {
 if (e.target.tagName === 'svg') {
-    copied();
+    e.preventDefault();
+    showcopied(e.target.parentNode.dataset.snippet);
 }
 if (e.target.tagName === 'BUTTON') {
-    copied();
+    e.preventDefault();
+    showcopied(e.target.dataset.snippet);
 }
 });
 
