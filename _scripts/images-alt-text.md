@@ -10,4 +10,4 @@ copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n"))
 ```javascript
 copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n"))
 ```
-
+{{ page.snippet }}
