@@ -6,6 +6,6 @@ codeexample: '$$(±1h1,h2,h3,h4,h5,h6±1).map(±2±3±3h=>`${h.tagName.toLowerCa
 ---
 
 {% highlight javascript %}
-{{ page.codeexample | replace: '±', "'"}}
+{{ page.codeexample | replace: '±1', "'" | replace: '±2', '\n' | replace '±3', '\t'}}}}
 {% endhighlight %}
 
