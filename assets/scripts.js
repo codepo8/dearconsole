@@ -4,7 +4,7 @@ copypopup.textContent = '☑️ Copied!';
 document.body.appendChild(copypopup);
 
 showcopied = snippet => {
-    snippet.replaceAll('±',"'");
+    snippet = snippet.replaceAll('±',"'");
     navigator.clipboard.writeText(snippet);
     console.log(snippet);
     document.body.classList.add('copied');

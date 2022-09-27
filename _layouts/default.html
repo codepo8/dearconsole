@@ -7,12 +7,13 @@
   <article class="standalone">
       <h1>{{ page.title }}</h1>
       <div id="snippets">
-        <button class="copytext" data-snippet="{{ s.codeexample }}">copy</button>
+        <button class="copytext" data-snippet="{{ page.codeexample }}">copy</button>
         {{ content }}
       </div>    
       <p class="back"><a href="/dearconsole/">Show all "Dear Console" snippets…</a></p>
   </article>
   <footer>
+  {% include footer.html %}
   </footer>
 
   <script src="/dearconsole/assets/scripts.js"></script>

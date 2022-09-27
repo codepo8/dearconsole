@@ -7,7 +7,7 @@ codeexample: 'copy($$(±h1,h2,h3,h4,h5,h6±).map(h=>`${±\t±.repeat(h.tagName.m
 
 {% highlight javascript %}
 copy($$('h1,h2,h3,h4,h5,h6').map(
-    h=>`${'\t'.repeat(h.tagName.match(/\d/)[0]-1)+'- '}`+
+    h => `${'\t'.repeat(h.tagName.match(/\d/)[0]-1)+'- '}`+
     `${h.innerText.trim()}`
 ).join('\n'))
 {% endhighlight %}
