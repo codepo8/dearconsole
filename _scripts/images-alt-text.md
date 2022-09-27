@@ -1,8 +1,6 @@
 ---
 name: Give me a list of all the images in the document with their alternative text
 layout: default
-snippet: |
-copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n"))
 ---
 
 # Give me a list of all the images in the document with their alternative text
@@ -10,4 +8,3 @@ copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n"))
 ```javascript
 copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n"))
 ```
-{{ page.snippet }}
