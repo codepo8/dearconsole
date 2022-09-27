@@ -1,3 +1,9 @@
+---
+title: Dear Console,… - a collection of code snippets to use in the browser console
+layout: default
+---
+
+# Dear Console… 
 
 <ul id="snippets">
 {% for s in site.scripts %}
