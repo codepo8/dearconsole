@@ -1,6 +1,6 @@
 ---
 title: Dear Console,… - a collection of code snippets to use in the browser console
-layout: default
+layout: index
 ---
 
 # Dear Console… 

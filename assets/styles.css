@@ -319,6 +319,7 @@ blockquote.warning strong:nth-child(1)::before {
   font-size: 0.9em;
   width: 1em;
   height: 1em;
+  cursor: pointer;
 }
 #snippets button svg {
   width: 1.5em;
