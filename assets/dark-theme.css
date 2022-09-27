@@ -1,4 +1,7 @@
 :root {
+  --codetext: #fff;
+  --codebackground: #000;
+  --codeborder: #ccc;
   --background: #111;
   --text: #ccc;
   --line: #ccc;

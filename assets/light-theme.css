@@ -2,7 +2,11 @@
   --background: #f8f8f8;
   --text: #333;
   --line: #111;
-  
+
+  --codetext: #111;
+  --codebackground: #ccc;
+  --codeborder: #999;
+
   --link: #355e37;
   --innerlink: #1e5b74;
   --deepestlink: #46585f;
