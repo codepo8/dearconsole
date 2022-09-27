@@ -4,7 +4,6 @@
   <li>
     <a href="/dearconsole{{ s.url }}">{{ s.name }}</a>
     <button data-snippet="{{ s.snippet }}"></button>
-    {{ s.data }}
   </li>
 {% endfor %}
 </ul>
