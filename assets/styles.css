@@ -321,7 +321,7 @@ blockquote.warning strong:nth-child(1)::before {
   height: 1em;
 }
 #snippets button svg {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   stroke: var(--link);
 }

@@ -41,8 +41,7 @@
   </footer>
 <script>
 document.querySelector('#snippets').addEventListener('click', e => {
-  
-  if (e.target.tagName === 'SVG') {
+  if (e.target.tagName === 'svg') {
     e.preventDefault();
     const snippet = e.target.parentNode.dataset.snippet;
     navigator.clipboard.writeText(snippet);
