@@ -9,6 +9,6 @@ snippet: null
 ```javascript
 copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n"))
 ```
-{% capture tip %}copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n")){% endcapture%}
+{% capture snippet %}copy($$('img').map(i => `${i.alt}: ${i.src}`).join("\n")){% endcapture%}
 
-{{ tip }}
+{{ snippet }}
