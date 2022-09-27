@@ -1,0 +1,318 @@
+body {
+  background:var(--background);
+  color: var(--text);
+  font-family: "Open Sans", "segoe ui", helvetica, arial, sans-serif;
+  font-size: calc(.7em + 1vw);
+  margin: 0;
+  padding: 0;
+}
+@media all and (min-width: 900px) {
+  body {
+   font-size: calc(.5em + 1vw);
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1em 0;
+}
+.index img {
+  max-width: 500px;
+}
+a {
+  color: var(--link);
+}
+header {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--headerbackground);
+  border-bottom: 1px solid var(--headershadow);
+}
+header ul {
+  flex: 2;
+  line-height: 2.8;
+  text-align: right;
+}
+header a {
+  flex: 3;
+  font-size: 1.3em;
+  padding: .5em 0;
+  font-weight: normal;
+  color: var(--headertext);
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -1px;  
+}
+header li {
+  display: inline;
+}
+header li::after {
+  content: '|';
+  padding: 0 8px;
+}
+header li:last-child::after {
+  content: '';
+  padding: 0;
+}
+header li a {
+  color: var(--link);
+  display: inline;
+  padding: 0;
+  font-size: .8em;
+}
+.content ul {
+  list-style: square;
+  margin: 0 0 0 .2em;
+  padding: 1em;
+}
+p.buycoffee{
+  border: var(--blocktopline) 1px solid;
+  padding: 5px 10px;
+  background: var(--blockbackground);
+  margin: 2em 0;
+}
+.audio {
+  margin: 1em 0;
+  border: 1px solid var(--line);
+  border-width: 1px 0;
+  background: var(--blockbackground);
+  padding: 5px;
+}
+.audio audio {
+  width: 100%;
+  display: block;
+  flex: 8;
+}
+.audio div {
+  display: flex;
+  padding: .5em;
+  gap: 5px;
+}
+.audio label {
+  flex: 1
+}
+.audio input[type="range"] {
+  width: 3em;
+  flex: 5;
+}
+.audio span {
+  flex: 1;
+  text-align: left;
+}
+.audio button {
+  flex: 1;
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  flex: 1;
+  text-align: center;
+  color: var(--text);
+  font-size: 0.9em;
+}
+.content h2 + ul {
+  padding-top: 0;
+}
+.content h3 + ul {
+  padding-top: 0;
+}
+.content li {
+  padding: 0 0 .5em 0;
+  line-height: 1.3;
+}
+li strong, blockquote strong {
+  color: var(--stronglist);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+ul ul, nav ul ul {
+  border-top: 1px solid var(--line);
+  padding: 1em 0 0 0;
+}
+ul ul li {
+  padding-bottom: .2em;
+}
+article.standalone {
+  margin: 0 20px;
+}
+article ul ul li a {
+  color: var(--innerlink);
+}
+article ul ul ul li a {
+  color: var(--deepestlink);
+}
+article a[href^="#"] {
+  opacity: 0.3;
+}
+ul ul ul {
+  border-top: none;
+  padding: .5em 0 0 1em;
+}
+ul a {
+  font-weight: bold;
+  text-decoration: none;
+}
+ul ul a {
+  font-weight: normal;
+}
+nav ul {
+  font-size: .9em;
+  margin: 0;
+  padding: 0;
+}
+nav ul a {
+  color: var(--pagetoclink);
+}
+nav #short_toc a {
+  color: var(--link);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -1px;
+  position: sticky;
+  background: var(--background);
+  padding: .5em 0;
+  top: 0;  
+}
+h1 {
+  font-size: 1.3em;
+  font-weight: normal;
+  color: var(--h1colour);
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: var(--h2colour);
+}
+h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: var(--h3colour);
+}
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--h4colour);
+}
+#split {
+  margin: 0 20px;
+  display: flex;
+  gap: 0 2em;
+  flex-wrap: wrap;
+}
+article {
+  flex: 4;
+  max-width: 36em;
+  min-width: 20em;
+}
+section {
+  min-width: 12em;
+  flex: 1;
+}
+p, li {
+  margin: 0;
+  padding: 0 0 .5em 0;
+  line-height: 1.5;
+}
+nav {
+  margin: 1em 0 0 0;
+}
+nav a {
+  font-weight: normal;
+}
+blockquote {
+    background: var(--blockbackground);
+    font-size: .85em;
+    margin: 1em 0;
+    border: solid 1px var(--line);
+    border-width: 1px 0 1px 0;
+    border-color: var(--blocktopline) transparent var(--blockbottomline) transparent;
+    padding: 10px;
+}
+.next {
+  text-align: right;
+  margin: 2em 0;
+}
+
+footer {
+  font-size: .8em;
+  padding: 1em 2em;
+  margin-top: 5em;
+  color: var(--footercolour);
+  background: var(--footerbackground);
+  border-top: 1px solid var(--footershadow);
+}
+footer a {
+  color: var(--footerlink);
+}
+footer div {
+  margin: 1em 0;
+  position: relative;
+  padding-left: 120px;
+}
+footer img {
+  position: absolute;
+  top: 5px;
+  width: auto;
+  left: 5px;
+}
+address {
+  display: inline;
+  font-style: inherit;
+}
+blockquote[class] strong:nth-child(1) {
+  display: block;
+  color: var(--blocknamecolour);
+  margin: .5em 0;
+}
+
+blockquote.tip strong:nth-child(1)::before {
+  content: '💡 ';
+  padding-right: 8px;
+}
+blockquote.fact strong:nth-child(1)::before {
+  content: '✅ ';
+  padding-right: 8px;
+}
+blockquote.example strong:nth-child(1)::before {
+  content: '👉🏻 ';
+  padding-right: 8px;
+}
+blockquote.warning strong:nth-child(1)::before {
+  content: '🚨 ';
+  padding-right: 8px;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#snippets button {
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  flex: 1;
+  text-align: center;
+  color: var(--text);
+  font-size: 0.9em;
+}
+#snippets button svg {
+  width: 1em;
+  height: 1em;
+}

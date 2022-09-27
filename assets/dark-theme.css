@@ -1,0 +1,31 @@
+:root {
+  --background: #111;
+  --text: #ccc;
+  --line: #ccc;
+
+  --link: skyblue;
+  --innerlink: #329ac3;
+  --deepestlink: #68838e;
+
+  --headerbackground: #000;
+  --headertext: #ffc107;
+  --headershadow: #666;
+
+  --h1colour: #4caf50;
+  --h2colour: #2196f3;
+  --h3colour: #cddc3c;
+  --h4colour: #ccc;
+
+  --stronglist: #4caf50;
+  --pagetoclink: #ccc;
+
+  --footercolour: #666;
+  --footerlink: #959595;
+  --footerbackground: #000;
+  --footershadow: #666;
+
+  --blocknamecolour: orange;
+  --blockbackground: #000;
+  --blocktopline: #666;
+  --blockbottomline: transparent;
+}
