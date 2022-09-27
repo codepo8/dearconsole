@@ -179,7 +179,14 @@ h1, h2, h3, h4 {
   padding: .5em 0;
   top: 0;  
 }
+
 h1 {
+  font-size: 1.3em;
+  font-weight: normal;
+  color: var(--h1colour);
+}
+.index h1 {
+  font-family: "Pacifico Regular", sans-serif;
   font-size: 1.3em;
   font-weight: normal;
   color: var(--h1colour);
