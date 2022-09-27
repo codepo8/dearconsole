@@ -1,6 +1,6 @@
 let copypopup = document.createElement('output');
 copypopup.classList.add('popup');
-copypopup.textContent = 'Copied!';
+copypopup.textContent = '☑️ Copied!';
 document.body.appendChild(copypopup);
 
 showcopied = _ => {

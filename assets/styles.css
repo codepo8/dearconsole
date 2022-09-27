@@ -312,6 +312,21 @@ blockquote.warning strong:nth-child(1)::before {
   width: 100%;
   height: 100%;
 }
+#snippets h1 {
+  flex: 0 0 100%;
+}
+div#snippets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+div#snippets div {
+  flex: 5;
+}
+div#snippets button {
+  flex: 1;
+}
+
 #snippets li {
   display: flex;
 }
@@ -358,8 +373,11 @@ output.popup {
   top: -20em;
   left: 50%;
   transform: translateX(-50%);
-  padding: 1em;
+  padding: .5em 1em;
   background: #000;
+  color: #fff;
+  border: 2px solid #fff;
   transition: 400ms;
+  border-radius: .5em;
 }
-.copied output.popup { top: 1em; }
+.copied output.popup { top: 3em; }
