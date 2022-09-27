@@ -8,9 +8,9 @@ body {
 article {
   padding: 0 2em;
 }
-
 h1 {
-  font-size: 1.3em;
+  font-size: 2.5em;
+  font-family: Pacifico,sans-serif;
   font-weight: normal;
   color: var(--h1colour);
 }
@@ -27,7 +27,16 @@ h2 {
   font-weight: normal;
   color: var(--h2colour);
 }
-
+.back {
+  text-align: right;
+}
+.back a {
+  color: var(--link);
+  text-decoration: none;
+  padding: .2em .5em;
+  border: 1px solid var(--codeborder);
+  display: inline-block;
+}
 
 footer {
   font-size: .8em;

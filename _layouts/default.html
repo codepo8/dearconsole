@@ -1,35 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@codepo8">
-  <meta name="twitter:creator" content="@codepo8">
-  <meta name="twitter:title" content="{{ page.title }}>">
-  {% if page.summary %}
-  <meta name="twitter:description" content="{{ page.summary }}">
-  {% endif %}
-  {% if page.heroimage %}
-  <meta name="twitter:image" content="{{ page.heroimage }}">
-  {% endif %}
-  <meta property="og:url" content="https://developer-advocacy.com{{ page.url }}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title"content="{{ page.title }}" />
-  {% if page.summary %}
-  <meta property="og:description" content="{{ page.summary }}" />
-  {% endif %}
-  {% if page.heroimage %}
-  <meta property="og:image"content="{{ page.heroimage }}" />
-  {% endif %}
-  <link href="/dearconsole/assets/syntax.css" rel="stylesheet">
-
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>">
-  <link rel="stylesheet" href="/dearconsole/assets/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-  <link rel="stylesheet" href="/dearconsole/assets/dark-theme.css" media="(prefers-color-scheme: dark)">
-  <link rel="stylesheet" href="/dearconsole/assets/styles.css">
-
+  {% include htmlheader.html %}
 </head>
 <body>
   <article class="standalone">

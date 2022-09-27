@@ -3,7 +3,7 @@ copypopup.classList.add('popup');
 copypopup.textContent = '☑️ Copied!';
 document.body.appendChild(copypopup);
 
-copied = _ => {
+copied = e => {
     e.preventDefault();
     const snippet = e.target.parentNode.dataset.snippet;
     navigator.clipboard.writeText(snippet);
