@@ -6,6 +6,8 @@ codeexample: 'copy($$(±img±).map(i => `${i.alt}: ${i.src}`).join(±\n±))'
 ---
 
 {% highlight javascript %}
-{{ page.codeexample | replace: '±', "'" | replace: '£', '\n' | replace '§', '\t'}}}}
+copy($$('img').map(
+    i => `${i.alt}: ${i.src}`
+).join('\n'))
 {% endhighlight %}
 
