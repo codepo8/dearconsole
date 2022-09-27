@@ -187,7 +187,9 @@ h1 {
 }
 .index h1 {
   font-family: "Pacifico", sans-serif;
-  font-size: 1.3em;
+  font-size: 7em;
+  margin: 0;
+  padding: 0;
   font-weight: normal;
   color: var(--h1colour);
 }
@@ -351,3 +353,13 @@ p code {
   padding: 2px;
 }
 
+output.popup {
+  position: fixed;
+  top: -20em;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em;
+  background: #000;
+  transition: 400ms;
+}
+.copied output.popup { top: 1em; }

@@ -5,7 +5,7 @@ layout: default
 codeexample: 'copy($$(±img±).map(i => `${i.alt}: ${i.src}`).join(±\n±))'
 ---
 
-# Give me a list of all the images in the document with their alternative text
+# {{ page.title }}
 
 ```javascript
 {{ page.codeexample | replace: '±', "'"}}
