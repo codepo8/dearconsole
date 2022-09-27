@@ -38,19 +38,28 @@
        {{ content }}
   </article>
   
-  
+
   <footer>
   </footer>
 
+<!-- <ul id="snippets">
+  <li><a href="#">Test</a><button data-snippet="{test}">copy</button></li>
+</ul> -->
+  
 <script>
 document.querySelector('snippets').addEventListener('click', e => {
   if (e.target.tagName === 'BUTTON') {
     e.preventDefault();
     const snippet = e.target.dataset.snippet;
     navigator.clipboard.writeText(snippet);
-    console.log(snippet);
+    console.log(snippet)
   }
 });
 </script>
+
+
+
+
+
 </body>
 </html>
