@@ -80,6 +80,7 @@ button.copy {
   cursor: pointer;
 }
 button.copytext {
+  padding: .2em .5em;
   align-self: self-end;
   font-family: inherit;
   background: transparent;
