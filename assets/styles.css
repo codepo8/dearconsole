@@ -312,19 +312,16 @@ blockquote.warning strong:nth-child(1)::before {
   width: 100%;
   height: 100%;
 }
-#snippets h1 {
-  flex: 0 0 100%;
-}
 div#snippets {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+  position: relative;
 }
 div#snippets div {
-  flex: 5;
+  padding-right: 2em;
 }
 div#snippets button {
-  flex: 1;
+  position: absolute;
+  top: .7em;
+  right: .2em;
 }
 
 #snippets li {

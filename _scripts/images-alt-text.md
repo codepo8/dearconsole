@@ -5,8 +5,7 @@ layout: default
 codeexample: 'copy($$(±img±).map(i => `${i.alt}: ${i.src}`).join(±\n±))'
 ---
 
-# {{ page.title }}
-
-```javascript
+{% highlight javascript linenos %}
 {{ page.codeexample | replace: '±', "'"}}
-```
+{% endhighlight %}
+
