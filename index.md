@@ -3,8 +3,6 @@ title: Dear Console,… - a collection of code snippets to use in the browser co
 layout: index
 ---
 
-# Dear Console… 
-
 <ul id="snippets">
 {% for s in site.scripts %}
   <li>
