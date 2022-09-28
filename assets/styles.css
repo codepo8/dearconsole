@@ -165,9 +165,11 @@ output.popup {
   display: flex;
   gap: 1em;
   margin: 2em;
+  flex-wrap: wrap;
 }
 .threecol > div {
   flex: 1;
+  min-width: 10em;
 }
 .threecol h2 {
  font-family: pacifico, cursive; 
