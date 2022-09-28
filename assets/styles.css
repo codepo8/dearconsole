@@ -161,3 +161,17 @@ output.popup {
   border-radius: .5em;
 }
 .copied output.popup { top: 3em; }
+.threecol {
+  display: flex;
+  gap: 1em;
+  margin: 2em 1em
+}
+.threecol > div {
+  flex: 1;
+}
+.threecol h2 {
+ font-family: pacifico, cursive; 
+}
+.threecol a {
+  color: var(--link);
+}
