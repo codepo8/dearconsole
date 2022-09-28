@@ -75,6 +75,9 @@ div#snippets {
   display: flex;
   margin-bottom: .5em;
 }
+.hidden {
+  display: none;
+}
 ul#snippets {
   margin: 1em 0;
   padding: 0;
@@ -178,5 +181,18 @@ output.popup {
   color: var(--link);
 }
 #tags {
-  display:none;
+  margin: 0 2em;
 }
+#tags li {
+  display: inline-block;
+  margin: 0 .5em 0 0;
+}
+#tags li button {
+  background: transparent;
+  border: none;
+  color: var(--link);
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid var(--link);
+  padding: 2px 5px;
+} 
