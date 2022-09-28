@@ -164,7 +164,7 @@ output.popup {
 .threecol {
   display: flex;
   gap: 1em;
-  margin: 2em 1em
+  margin: 2em;
 }
 .threecol > div {
   flex: 1;
