@@ -177,3 +177,6 @@ output.popup {
 .threecol a {
   color: var(--link);
 }
+#tags {
+  display:none;
+}
