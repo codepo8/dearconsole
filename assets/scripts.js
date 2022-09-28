@@ -22,7 +22,7 @@ if (e.target.tagName === 'BUTTON') {
 });
 const filterlist = tag => {
     document.querySelectorAll('#snippets li').forEach(li => {
-        if (li.classList.contains(tag)) {
+        if (li.classList.contains(tag) || tag === 'all') {
             li.classList.remove('hidden');
         } else {
             li.classList.add('hidden');

@@ -75,7 +75,7 @@ div#snippets {
   display: flex;
   margin-bottom: .5em;
 }
-.hidden {
+#snippets li.hidden {
   display: none;
 }
 ul#snippets {
@@ -183,11 +183,9 @@ output.popup {
 #tags {
   margin: 0 2em;
 }
-#tags li {
+#tags button {
   display: inline-block;
   margin: 0 .5em 0 0;
-}
-#tags li button {
   background: transparent;
   border: none;
   color: var(--link);
