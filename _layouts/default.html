@@ -9,7 +9,14 @@
       <div id="snippets">
         <button class="copytext" data-snippet="{{ page.codeexample }}">copy</button>
         {{ content }}
-      </div>    
+      </div>
+
+      <ul>
+    {% for tag in site.tags %}
+      <li><a href="{{ post.url }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}    
       <p class="back"><a href="/dearconsole/">Show all "Dear Console" snippets…</a></p>
   </article>
 
