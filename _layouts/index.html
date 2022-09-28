@@ -11,13 +11,14 @@
     <h1>Dear Console…</h1> 
 
     {{ content }}
-  </article>
-
+</article>
+  <div id="tags"></div>
   {% include whathowwho.html %}
 
   <footer>
     {% include footer.html %}
   </footer>
+  {% include data.html %}
   <script src="/dearconsole/assets/scripts.js"></script>
 </body>
 </html>
