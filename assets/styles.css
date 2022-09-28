@@ -10,7 +10,7 @@ article {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3vmax;
   font-family: Pacifico,sans-serif;
   font-weight: normal;
   color: var(--h1colour);
@@ -138,7 +138,6 @@ figure {
 }
 div.highlight {
   padding: 0 .5em;
-  max-height: 300px;
   overflow: scroll;
 }
 p code {
