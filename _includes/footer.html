@@ -1,11 +1,20 @@
 <p>Written by <a href="https://christianheilmann.com">Christian Heilmann</a>, <a href="https://twitter.com/codepo8">@codepo8</a>, available on <a href="https://github.com/codepo8/dearconsole">GitHub</a></p>
 
 <script>
+{% for s in site.scripts %}
+    {{ site | jsonify }}
+{% endfor %}
+
+
 const scripts = [
 {% for s in site.scripts %}
-{ u: {{ s.url }} ,
-  n: {{ s.name }}, 
-  t: {{ s.tags }}
+{ u: '{{ s.url }}' ,
+  n: '{{ s.name }}', 
+  t: [
+  {% for tag in site.tags %}
+      '{{ tag }}',
+    {% endfor %}
+    ]
 },
 {% endfor %}
 ]
