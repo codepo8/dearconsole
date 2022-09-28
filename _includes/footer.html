@@ -2,7 +2,7 @@
 
 <script>
 {% for s in site.scripts %}
-    {{ site | jsonify }}
+    {{ site.data | jsonify }}
 {% endfor %}
 
 
