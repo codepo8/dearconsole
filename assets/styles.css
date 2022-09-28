@@ -164,10 +164,11 @@ output.popup {
   border-radius: .5em;
 }
 .copied output.popup { top: 3em; }
+
 .threecol {
   display: flex;
   gap: 1em;
-  margin: 2em;
+  margin: 2em 0;
   flex-wrap: wrap;
 }
 .threecol > div {
@@ -181,16 +182,16 @@ output.popup {
   color: var(--link);
 }
 #tags {
-  margin: 0 2em;
+  margin: 1em 0;
 }
 #tags button {
   display: inline-block;
   margin: 0 .5em 0 0;
   background: transparent;
   border: none;
-  color: var(--link);
+  color: var(--text);
   font-size: 1em;
   cursor: pointer;
-  border: 1px solid var(--link);
+  border: 1px solid var(--text);
   padding: 2px 5px;
 } 
