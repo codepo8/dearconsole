@@ -2,7 +2,7 @@
 
 <script>
 {% for s in site.scripts %}
-    {{ s | jsonify }}
+    {{ s.data | jsonify }}
 {% endfor %}
 
 
@@ -10,12 +10,7 @@ const scripts = [
 {% for s in site.scripts %}
 { u: '{{ s.url }}' ,
   n: '{{ s.name }}', 
-  t: [
-    
-  {% for tag in s.tags %}
-      '{{ tag }}',
-    {% endfor %}
-    ]
+  t: {{ s.tags | jsonify }},
 },
 {% endfor %}
 ]
