@@ -184,7 +184,7 @@ output.popup {
   border-radius: .5em;
 }
 .copied output.popup { 
-  top: calc(calc(var(--mouse-y) * 1px) -2em)
+  top: calc(calc(var(--mouse-y) * 1px) - 2em)
 }
 .threecol {
   display: flex;

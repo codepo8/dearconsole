@@ -12,7 +12,7 @@ const showcopied = snippet => {
 };
 document.querySelector('#snippets')?.addEventListener('click', e => {
     e.preventDefault();
-    let y = e.y - document.querySelector('#snippets').getBoundingClientRect().y | 0;    
+    let y = e.y;    
     document.documentElement.style.setProperty('--mouse-y', y);
     if (e.target.tagName === 'svg') {
         showcopied(e.target.parentNode.dataset.snippet);
