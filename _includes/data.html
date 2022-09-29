@@ -33,9 +33,8 @@
   {{ t }}
 {% endfor %}
 
-{% assign sorted = '' %}
 <button data-tag="all">All topics</button>
-{% for tag in sorted %}
+{% for tag in taglist %}
 <button data-tag="{{ tag }}">{{ tag }}</button>
 {% endfor %}
 -->

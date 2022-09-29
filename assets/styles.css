@@ -1,3 +1,6 @@
+:root {
+  --mouse-y: 0;
+}
 body {
   background:var(--background);
   color: var(--text);
@@ -170,8 +173,9 @@ output.popup {
   transition: 400ms;
   border-radius: .5em;
 }
-.copied output.popup { top: 3em; }
-
+.copied output.popup { 
+  top: calc(var(--mouse-y) * 1px)
+}
 .threecol {
   display: flex;
   gap: 1em;

@@ -13,10 +13,12 @@ const showcopied = snippet => {
 document.querySelector('#snippets')?.addEventListener('click', e => {
 if (e.target.tagName === 'svg') {
     e.preventDefault();
+    document.documentElement.style.setProperty('--mouse-y', e.y);
     showcopied(e.target.parentNode.dataset.snippet);
 }
 if (e.target.tagName === 'BUTTON') {
     e.preventDefault();
+    document.documentElement.style.setProperty('--mouse-y', e.y);
     showcopied(e.target.dataset.snippet);
 }
 });
