@@ -11,13 +11,14 @@ const showcopied = snippet => {
     setTimeout(() => document.body.classList.remove('copied'), 1500);
 };
 document.querySelector('#snippets')?.addEventListener('click', e => {
-    e.preventDefault();
     let y = e.y;    
     document.documentElement.style.setProperty('--mouse-y', y);
     if (e.target.tagName === 'svg') {
+        e.preventDefault();
         showcopied(e.target.parentNode.dataset.snippet);
     }
     if (e.target.tagName === 'BUTTON') {
+        e.preventDefault();
         showcopied(e.target.dataset.snippet);
     }
 });
