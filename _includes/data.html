@@ -16,5 +16,5 @@
     tags.forEach(t => {
       out += `<button data-tag="${t}">${t}</button> `;
     })
-    document.querySelector('#tags').innerHTML = out;
+    document.querySelector('#tags')?.innerHTML = out;
 </script>
