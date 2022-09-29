@@ -24,6 +24,7 @@
 {% assign taglist  = '' | split: '' %}
 {% for s in site.scripts %}
   {% assign i = s.tags %}
+  {{ i }}
   {% assign taglist = taglist | push: i %}
 {% endfor %}
 
