@@ -116,10 +116,10 @@ button.copy {
   flex-grow: 0;
   cursor: pointer;
 }
-#snippet {
+div#snippets {
   position: relative;
 }
-#snippet button.copy {
+div#snippets button.copy {
   position: absolute;
   top: .5em;
   left: .5em;
