@@ -31,6 +31,11 @@
   --blockbackground: #000;
   --blocktopline: #666;
   --blockbottomline: transparent;
+  --infoboxtext: #111;
+  --infoboxbackground: #2196f3;
+  --infoboxborder: #f8f8f8;
+  --infoboxtext: #036;
+
 }
 
 .highlight pre { background-color: #272822; }

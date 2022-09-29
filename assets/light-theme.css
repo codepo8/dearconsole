@@ -32,6 +32,12 @@
   --blockbackground: #eee;
   --blocktopline: #ccc;
   --blockbottomline: transparent;
+
+  --infoboxtext: #111;
+  --infoboxbackground: #2196f3;
+  --infoboxborder: #f8f8f8;
+  --infoboxtext: #036;
+
 }
 
 .highlight .hll { background-color: #ffffcc }
