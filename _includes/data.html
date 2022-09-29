@@ -1,7 +1,6 @@
 <script>
     const scripts = [
-    {% for s in site.scripts %}
-    { u: '{{ s.url }}', n: '{{ s.name }}', t: {{ s.tags | jsonify }},},
+    {% for s in site.scripts %}{u:'{{ s.url }}',n:'{{ s.name }}',t:{{ s.tags | jsonify }}},
     {% endfor %}
     ]
     let tags = [];
