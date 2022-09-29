@@ -32,6 +32,7 @@ Here is what the template looks like with comments to explain what each thing me
     # tags for the example
     tags: logging hello console
     # choose the default layout to render an HTML document
+    layout: default
     ---
     
     {% highlight javascript %}
