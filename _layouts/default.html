@@ -11,11 +11,8 @@
         {{ content }}
       </div>
 
-      <!-- <ul>
-    {% for tag in page.tags %}
-      <li><a href="{{ post.url }}">{{ tag }}</a></li>
-    {% endfor %}
-  </ul> -->
+      <p>Topics: {{ page.tags | join: "," }}</p>
+
       <p class="back"><a href="/dearconsole/">Show all "Dear Console" snippets…</a></p>
 
 
