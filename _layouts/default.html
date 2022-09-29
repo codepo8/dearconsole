@@ -9,13 +9,22 @@
       <div id="snippets">
         <button class="copytext" data-snippet="{{ page.codeexample }}">copy</button>
         {{ content }}
-      </div>    
+      </div>
+
+      <p>Topics: {{ page.tags | join: ", " }}</p>
+
       <p class="back"><a href="/dearconsole/">Show all "Dear Console" snippets…</a></p>
-  </article>
+
+
+    {% include whathowwho.html %}
+    </article>
+
+
   <footer>
   {% include footer.html %}
   </footer>
 
+  {% include data.html %}
   <script src="/dearconsole/assets/scripts.js"></script>
 </body>
 </html>

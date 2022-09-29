@@ -10,14 +10,14 @@ article {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3vmax;
   font-family: Pacifico,sans-serif;
   font-weight: normal;
   color: var(--h1colour);
 }
 .index h1 {
   font-family: "Pacifico", sans-serif;
-  font-size: max(10vw, 14px);
+  font-size: max(8vw, 14px);
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -27,6 +27,7 @@ h2 {
   font-size: 1.2em;
   font-weight: normal;
   color: var(--h2colour);
+  margin: 0 0 0.5em 0;
 }
 .back {
   text-align: right;
@@ -73,7 +74,10 @@ div#snippets {
 }
 #snippets li {
   display: flex;
-  margin-bottom: .5em;
+  padding: .2em 0;
+}
+#snippets li.hidden {
+  display: none;
 }
 ul#snippets {
   margin: 1em 0;
@@ -82,12 +86,18 @@ ul#snippets {
 #snippets li > a {
   display:block;
   padding: .2em .5em;
-
   line-height: 1.2;
   flex: 7;
   color: var(--link);
   text-decoration: none;
   font-size: 1.1em;
+}
+#snippets li:hover {
+  background: var(--link);
+}
+#snippets li:hover a, #snippets li:hover svg {
+  color: var(--background);
+  stroke: var(--background);
 }
 button.copy {
   flex: 1;
@@ -97,8 +107,7 @@ button.copy {
   text-align: center;
   color: var(--text);
   font-size: 0.9em;
-  width: 1em;
-  height: 1em;
+  flex-grow: 0;
   cursor: pointer;
 }
 button.copytext {
@@ -138,7 +147,6 @@ figure {
 }
 div.highlight {
   padding: 0 .5em;
-  max-height: 300px;
   overflow: scroll;
 }
 p code {
@@ -162,3 +170,39 @@ output.popup {
   border-radius: .5em;
 }
 .copied output.popup { top: 3em; }
+
+.threecol {
+  display: flex;
+  gap: 1em;
+  margin: 2em 0;
+  flex-wrap: wrap;
+}
+.threecol > div {
+  flex: 1;
+  min-width: 10em;
+}
+.threecol h2 {
+ font-family: pacifico, cursive;
+ margin: 0 0 .2em 0 
+}
+.threecol a {
+  color: var(--link);
+}
+.threecol p {
+  line-height: 1.3;
+  margin-top: 0;
+}
+#tags {
+  margin: 1em 0;
+}
+#tags button {
+  display: inline-block;
+  margin: 0 .5em .5em 0;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid var(--text);
+  padding: 2px 5px;
+} 
