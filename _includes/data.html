@@ -23,11 +23,11 @@
 
 {% assign taglist  = '' %}
 {% for s in site.scripts %}
-  {% assign i = s.tags | join: ',' %}
+  {% assign i = s.tags | join: ',' | append: ',' %}
   {% assign taglist = taglist | append: i %}
 {% endfor %}
 
-{% taglist %}
+{{ taglist }}
 
 {% assign sorted = '' %}
 <button data-tag="all">All topics</button>
