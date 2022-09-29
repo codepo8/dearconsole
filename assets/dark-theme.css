@@ -34,7 +34,12 @@
   --infoboxtext: #111;
   --infoboxbackground: #2196f3;
   --infoboxborder: #f8f8f8;
-  --infoboxtext: #036;
+  --infoboxlink: #369;
+  
+  --tagbackground: #eee;
+  --tagbutton: #666;
+  --tagborder: #999;
+
 
 }
 

@@ -34,9 +34,13 @@
   --blockbottomline: transparent;
 
   --infoboxtext: #111;
-  --infoboxbackground: #2196f3;
-  --infoboxborder: #f8f8f8;
+  --infoboxbackground: skyblue;
+  --infoboxborder:#369;
   --infoboxtext: #036;
+
+  --tagbackground: #eee;
+  --tagbutton: #666;
+  --tagborder: #999;
 
 }
 

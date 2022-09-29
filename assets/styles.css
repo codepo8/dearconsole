@@ -181,12 +181,12 @@ output.popup {
   gap: 1em;
   margin: 2em 0;
   flex-wrap: wrap;
-  background: var(--infoboxbackground);
-  color: var(--infoboxtext);
 }
 .threecol > div {
   flex: 1;
   min-width: 10em;
+  background: var(--infoboxbackground);
+  color: var(--infoboxtext);
 }
 .threecol h2 {
   font-family: pacifico, cursive;
@@ -209,11 +209,11 @@ output.popup {
 #tags button {
   display: inline-block;
   margin: 0 .5em .5em 0;
-  background: transparent;
-  border: none;
-  color: var(--text);
+  background:var(--tagbackground);
+  color: var(--tagbutton);
   font-size: 1em;
   cursor: pointer;
-  border: 1px solid var(--text);
+  border: 1px solid var(--tagborder);
   padding: 2px 5px;
+  border-radius: 5px;
 } 
