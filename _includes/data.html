@@ -1,10 +1,7 @@
 <script>
     const scripts = [
     {% for s in site.scripts %}
-    { u: '{{ s.url }}' ,
-      n: '{{ s.name }}', 
-      t: {{ s.tags | jsonify }},
-    },
+    { u: '{{ s.url }}', n: '{{ s.name }}', t: {{ s.tags | jsonify }},},
     {% endfor %}
     ]
     let tags = [];
@@ -15,7 +12,7 @@
         }
       })
     })
-    let out = 'Topics: <button data-tag="all">all</button> ';
+    let out = '<button data-tag="all">All topics</button> ';
     tags.forEach(t => {
       out += `<button data-tag="${t}">${t}</button> `;
     })
