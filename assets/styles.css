@@ -84,7 +84,7 @@ ul#snippets {
 }
 #snippets li > a {
   display:block;
-  padding: .2em .5em 0 .5em;
+  padding: .2em .5em .2em 0;
   line-height: 1.2;
   flex: 7;
   color: var(--link);
@@ -179,6 +179,9 @@ output.popup {
 }
 .threecol a {
   color: var(--link);
+}
+.threecol p {
+  line-height: 1.3;
 }
 #tags {
   margin: 1em 0;
