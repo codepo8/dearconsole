@@ -27,10 +27,7 @@
   {% assign taglist = taglist | push: i %}
 {% endfor %}
 
-{{ taglist }}
-
-{{ taglist | join: ',' | split: ',' | uniq | sort }}
-{{ assign sorted = taglist | split: ',' | uniq | sort }}
+{{ assign sorted = taglist | join: ',' | split: ',' | uniq | sort }}
 
 {{ sorted }}
 
