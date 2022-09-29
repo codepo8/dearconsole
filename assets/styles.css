@@ -121,8 +121,8 @@ div#snippets {
 }
 div#snippets button.copy {
   position: absolute;
-  top: .5em;
-  left: .5em;
+  top: 1em;
+  right: .5em;
 }
 button.copytext {
   padding: .2em .5em;
