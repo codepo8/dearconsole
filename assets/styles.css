@@ -37,7 +37,7 @@ h2 {
 .back {
   text-align: right;
 }
-back a {
+.back a {
   color: var(--link);
   text-decoration: none;
   padding: .2em .5em;
