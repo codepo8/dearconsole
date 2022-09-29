@@ -27,7 +27,7 @@
   {% assign taglist = taglist | append: i %}
 {% endfor %}
 
-{{ assign taglist = taglist | split: ',' | sort | uniq | join: ',' }}
+{% assign taglist = taglist | split: ',' | sort | uniq %}
 
 {% for t in taglist %}
   {{ t }}
