@@ -22,7 +22,7 @@
 <!--
     {% assign taglist = '' %}
     {% for s in site.scripts %}
-    {{ taglist | append: s.tags | join: ",") }}
+    {{ assign taglist = taglist | append: s.tags | join: ",") }}
     {% endfor %}
     {{ taglist | split: "," | uniq | sort }}
 -->
