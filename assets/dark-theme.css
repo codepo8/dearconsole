@@ -34,11 +34,11 @@
   --infoboxtext: #111;
   --infoboxbackground: #2196f3;
   --infoboxborder: #f8f8f8;
-  --infoboxlink: #369;
+  --infoboxlink: #000;
   
-  --tagbackground: #eee;
-  --tagbutton: #666;
-  --tagborder: #999;
+  --tagbackground: #333;
+  --tagbutton: #ccc;
+  --tagborder: #666;
 
 
 }
