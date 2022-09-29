@@ -84,12 +84,18 @@ ul#snippets {
 }
 #snippets li > a {
   display:block;
-  padding: .2em .5em .2em 0;
+  padding: .2em .5em;
   line-height: 1.2;
   flex: 7;
   color: var(--link);
   text-decoration: none;
   font-size: 1.1em;
+}
+#snippets li:hover {
+  background: var(--deepestlink);
+}
+#snippets li:hover a {
+  color: var(--background);
 }
 button.copy {
   flex: 1;
@@ -99,8 +105,7 @@ button.copy {
   text-align: center;
   color: var(--text);
   font-size: 0.9em;
-  width: 1em;
-  height: 1em;
+  flex-grow: 0;
   cursor: pointer;
 }
 button.copytext {
