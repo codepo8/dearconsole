@@ -33,6 +33,9 @@
 
 {{ taglist | join: ',' | split: ',' | uniq | sort }}
 
+
+{{ taglist | split: ',' | uniq | sort }}
+
 <button data-tag="all">All topics</button>
 {% for tag in sorted %}
 <button data-tag="{{ tag }}">{{ tag }}</button>
