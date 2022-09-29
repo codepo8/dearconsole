@@ -102,6 +102,7 @@ ul#snippets {
   background: var(--link);
   transition: 400ms;
 }
+#snippets li:focus-within a, #snippets li:focus-within svg, 
 #snippets li:hover a, #snippets li:hover svg {
   color: var(--background);
   stroke: var(--background);
