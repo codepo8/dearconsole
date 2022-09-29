@@ -26,10 +26,12 @@
   {% assign i = s.tags | join: ',' %}
   {% assign taglist = taglist | push: i %}
 {% endfor %}
+{% for tag in taglist %}
+    {{ tag }}
+{% endfor %}
 
-{{ assign sorted = taglist | join: ',' | split: ',' | uniq | sort }}
 
-{{ sorted }}
+{{ taglist | join: ',' | split: ',' | uniq | sort }}
 
 <button data-tag="all">All topics</button>
 {% for tag in sorted %}
