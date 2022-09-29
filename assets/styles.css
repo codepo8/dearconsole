@@ -10,6 +10,8 @@ body {
 }
 article {
   padding: 0 2em;
+  max-width: 50em;
+  margin: 0 auto;
 }
 
 h1 {
@@ -20,7 +22,7 @@ h1 {
 }
 .index h1 {
   font-family: "Pacifico", sans-serif;
-  font-size: max(8vw, 14px);
+  font-size: max(5vmax, 14px);
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -90,11 +92,11 @@ ul#snippets {
 #snippets li > a {
   display:block;
   padding: .2em .5em;
-  line-height: 1.2;
+  line-height: 1.1;
   flex: 7;
   color: var(--link);
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: .9em;
 }
 #snippets li:hover {
   background: var(--link);
@@ -113,6 +115,14 @@ button.copy {
   font-size: 0.9em;
   flex-grow: 0;
   cursor: pointer;
+}
+#snippet {
+  position: relative;
+}
+#snippet button.copy {
+  position: absolute;
+  top: .5em;
+  left: .5em;
 }
 button.copytext {
   padding: .2em .5em;
@@ -174,7 +184,7 @@ output.popup {
   border-radius: .5em;
 }
 .copied output.popup { 
-  top: calc(var(--mouse-y) * 1px)
+  top: calc(calc(var(--mouse-y) * 1px) -2em)
 }
 .threecol {
   display: flex;
@@ -185,15 +195,21 @@ output.popup {
 .threecol > div {
   flex: 1;
   min-width: 10em;
+  background: var(--infoboxbackground);
+  color: var(--infoboxtext);
 }
 .threecol h2 {
- font-family: pacifico, cursive;
- margin: 0 0 .2em 0 
+  font-family: pacifico, cursive;
+  margin: 0 0 .2em 0;
+  background: var(--background);
+  padding: .2em;
+  border-bottom: 2px solid var(--infoboxborder);
 }
 .threecol a {
-  color: var(--link);
+  color: var(--infoboxlink);
 }
 .threecol p {
+  padding:.2em .5em;
   line-height: 1.3;
   margin-top: 0;
 }
@@ -203,11 +219,11 @@ output.popup {
 #tags button {
   display: inline-block;
   margin: 0 .5em .5em 0;
-  background: transparent;
-  border: none;
-  color: var(--text);
+  background:var(--tagbackground);
+  color: var(--tagbutton);
   font-size: 1em;
   cursor: pointer;
-  border: 1px solid var(--text);
+  border: 1px solid var(--tagborder);
   padding: 2px 5px;
+  border-radius: 5px;
 } 
