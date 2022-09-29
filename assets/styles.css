@@ -17,7 +17,7 @@ h1 {
 }
 .index h1 {
   font-family: "Pacifico", sans-serif;
-  font-size: max(10vw, 14px);
+  font-size: max(8vw, 14px);
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -92,10 +92,11 @@ ul#snippets {
   font-size: 1.1em;
 }
 #snippets li:hover {
-  background: var(--deepestlink);
+  background: var(--link);
 }
-#snippets li:hover a {
+#snippets li:hover a, #snippets li:hover svg {
   color: var(--background);
+  stroke: var(--background);
 }
 button.copy {
   flex: 1;
