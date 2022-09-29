@@ -10,5 +10,6 @@ tags: images media scraping
 copy($$('a').filter(
     a => a.href.match(
         /\.(jpe?g|gif|png|webp)$/i
-    )).map(i=>i.href).join('\n'))
+    )).map(i=>i.href).join('\n')
+)
 {% endhighlight %}
