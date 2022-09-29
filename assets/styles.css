@@ -27,6 +27,7 @@ h2 {
   font-size: 1.2em;
   font-weight: normal;
   color: var(--h2colour);
+  margin: 0 0 0.5em 0;
 }
 .back {
   text-align: right;
@@ -73,7 +74,7 @@ div#snippets {
 }
 #snippets li {
   display: flex;
-  margin-bottom: .5em;
+  padding: .2em 0;
 }
 #snippets li.hidden {
   display: none;
