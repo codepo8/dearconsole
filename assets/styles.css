@@ -98,7 +98,7 @@ ul#snippets {
   text-decoration: none;
   font-size: .9em;
 }
-#snippets li:hover {
+#snippets li:hover,#snippets li:focus-within {
   background: var(--link);
   transition: 400ms;
 }
