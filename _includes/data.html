@@ -20,11 +20,11 @@
     }
 </script>
 <!--
-    {% capture taglist %}{% for s in site.scripts %}{{ s.tags | join: ",") }}{% endfor %}{% endcapture %}
+    {% capture taglist %}{% for s in site.scripts %}{{ s.tags | join: " ") }}{% endfor %}{% endcapture %}
 
 
     {{ taglist }}
 
 
-    {{ taglist | join: "," | uniq | sort }}
+    {{ taglist | split: " " | uniq | sort }}
 -->
