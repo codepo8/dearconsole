@@ -100,6 +100,7 @@ ul#snippets {
 }
 #snippets li:hover {
   background: var(--link);
+  transition: 400ms;
 }
 #snippets li:hover a, #snippets li:hover svg {
   color: var(--background);
@@ -208,6 +209,13 @@ output.popup {
   padding: .2em;
   border-bottom: 2px solid var(--infoboxborder);
 }
+.threecol > div:hover h2 {
+  margin-top: -.2em;
+  transition: 400ms;
+  padding-bottom: .4em;
+}
+
+
 .threecol a {
   color: var(--infoboxlink);
 }
