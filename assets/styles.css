@@ -37,13 +37,21 @@ h2 {
 .back {
   text-align: right;
 }
-.back a {
+back a {
   color: var(--link);
   text-decoration: none;
   padding: .2em .5em;
   border: 1px solid var(--link);
   display: inline-block;
   font-size: 1.2em;
+  background-image: linear-gradient(to right,var(--tagbackground),var(--headershadow));
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+.back a:hover {
+  background-size: 100% 100%;
+  transition: background-size 400ms;
 }
 
 footer {
