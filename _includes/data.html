@@ -28,6 +28,9 @@
 {% endfor %}
 
 {{ assign sorted = taglist | join: ',' | split: ',' | uniq | sort }}
+{{ assign sorted = taglist | split: ',' | uniq | sort }}
+
+{{ sorted }}
 
 <button data-tag="all">All topics</button>
 {% for tag in sorted %}
