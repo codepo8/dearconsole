@@ -3,7 +3,7 @@
         const scripts = [
         {% for s in site.scripts %}{u:'{{ s.url }}',n:'{{ s.name }}',t:{{ s.tags | jsonify }}},
         {% endfor %}
-        ]
+        ];
         let tags = [];
         scripts.forEach(s => {
           s.t.forEach(t => {
@@ -19,3 +19,11 @@
         document.querySelector('#tags').innerHTML = out;
     }
 </script>
+<!--
+    {% assign taglist = '' %}
+    {% for s in site.scripts %}
+    {{ taglist | append s.tags | join }}
+    {% endfor %}
+    {% assign taglist = taglist | split: "," | uniq | sort %}
+    {{ taglist }}
+-->
