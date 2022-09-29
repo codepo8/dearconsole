@@ -6,7 +6,7 @@ document.body.appendChild(copypopup);
 const showcopied = snippet => {
     snippet = snippet.replaceAll('±',"'");
     navigator.clipboard.writeText(snippet);
-    console.log(snippet);
+    console.log('Welcome to Console, paste away!');
     document.body.classList.add('copied');
     setTimeout(() => document.body.classList.remove('copied'), 1500);
 };
