@@ -163,14 +163,17 @@ div.highlight {
   padding: 0 .5em;
   overflow: scroll;
 }
-p code {
+ol li code {
   color: var(--codetext);
+  display: inline-block;
   background: var(--codebackground);;
   border: 1px var(--codeborder) solid;
   border-radius: 3px;
   padding: 2px;
 }
-
+p a {
+  color: var(--link);
+}
 output.popup {
   position: fixed;
   top: -20em;
