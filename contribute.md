@@ -4,7 +4,7 @@ name: Give me a list of all headings and their level
 layout: text
 ---
 
-## So you got something you want to tell the Console?
+# So you got something you want to tell the Console?
 
 Excellent, we'd love to add it here for all to benefit. The best way would be to go to the [GitHub Repo](https://github.com/codepo8/dearconsole) and add it yourself. If you're not familiar with GitHub, you can also [contact me on Twitter me about your snippet](https://twitter.com/codepo8) and I'll add it for you.
 

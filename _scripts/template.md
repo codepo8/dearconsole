@@ -9,6 +9,8 @@ name: Say hello world
 codeexample: 'console.log(±hello world±)'
 # tags for the example
 tags: logging hello console
+# choose the default layout to render an HTML document
+layout: default
 ---
 
 {% highlight javascript %}
