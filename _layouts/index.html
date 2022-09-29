@@ -12,20 +12,8 @@
 
     {{ content }}
 
-    <div id="tags">
-        {% assign taglist  = '' %}
-        {% for s in site.scripts %}
-          {% if s.name != 'Say hello world' %}
-          {% assign i = s.tags | join: ',' | append: ',' %}
-          {% assign taglist = taglist | append: i %}
-          {% endif %}
-        {% endfor %}        
-        {% assign taglist = taglist | split: ',' | sort | uniq %}
-        <button data-tag="all">All topics</button>
-        {% for tag in taglist %}
-        <button data-tag="{{ tag }}">{{ tag }}</button>
-        {% endfor %}
-    </div>
+    {% include taglist.html %}
+
     {% include whathowwho.html %}
   </article>
 
