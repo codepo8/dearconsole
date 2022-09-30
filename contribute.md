@@ -33,6 +33,8 @@ Here is what the template looks like with comments to explain what each thing me
     tags: logging hello console
     # choose the default layout to render an HTML document
     layout: default
+    author: Your name
+    authorlink: your url
     ---
     
     {% highlight javascript %}

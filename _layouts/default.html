@@ -11,6 +11,14 @@
         {{ content }}
       </div>
 
+      {% if page.author %}
+      {% if page.authorlink %}
+      <p class="author">by <a href="{{page.authorlink}}">{{ page.author }}</a></p>
+      {% elseif %}
+      <p class="author">by {{ page.author }}</p>
+      {% endif %}
+      {% endif %}
+
       <p>Topics: {{ page.tags | join: ", " }}</p>
 
       <p class="back"><a href="/dearconsole/">Show all {{ site.scripts.size }} "Dear Console" snippets</a></p>

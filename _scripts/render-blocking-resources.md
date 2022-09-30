@@ -4,6 +4,8 @@ name: Give me a list of all render blocking resources
 layout: default
 codeexample: 'copy(window.performance.getEntriesByType(±resource±).filter(entry => entry.renderBlockingStatus === ±blocking± ).map(({name}) => name).join(±\n±))'
 tags: rendering
+author: Pankaj Parashar
+authorlink: https://pankajparashar.com
 ---
 
 {% highlight javascript %}

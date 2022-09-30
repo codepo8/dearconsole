@@ -4,6 +4,8 @@ name: Give me a list of all third party scripts
 codeexample: 'copy(Array.from(document.scripts).map(script => script.src).filter(src => src && src.startsWith(window.location.origin)).join(±\n±))'
 tags: scripts
 layout: default
+author: Pankaj Parashar
+authorlink: https://pankajparashar.com
 ---
 
 {% highlight javascript %}

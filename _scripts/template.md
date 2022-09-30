@@ -11,6 +11,8 @@ codeexample: 'console.log(±hello world±)'
 tags: logging hello console
 # choose the default layout to render an HTML document
 layout: default
+author: Your name
+authorlink: your url
 ---
 
 {% highlight javascript %}
