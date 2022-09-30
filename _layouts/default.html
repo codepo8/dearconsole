@@ -13,9 +13,9 @@
 
       {% if page.author %}
       {% if page.authorlink %}
-      <p class="author">by <a href="{{page.authorlink}}">{{ page.author }}</a></p>
+      <p class="author">by <a href="{{page.authorlink}}">{{ page.author }}</a> <span title="guest author! Thank you!">🎉</span> </p>
       {% else %}
-      <p class="author">by {{ page.author }}</p>
+      <p class="author">by {{ page.author }} <span title="guest author! Thank you!">🎉</span> </p>
       {% endif %}
       {% endif %}
 
