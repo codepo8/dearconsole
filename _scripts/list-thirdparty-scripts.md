@@ -1,7 +1,7 @@
 ---
 title: Dear Console, give me a list of all third party scripts
 name: Give me a list of all third party scripts
-codeexample: 'Array.from(document.scripts).map(script => script.src).filter(src => src && src.startsWith(window.location.origin))'
+codeexample: 'copy(Array.from(document.scripts).map(script => script.src).filter(src => src && src.startsWith(window.location.origin)).join(±\n±)'
 tags: scripts
 layout: default
 ---
@@ -10,7 +10,8 @@ layout: default
 copy(
   Array.from(document.scripts)
        .map(script => script.src)
-       .filter(src => src && !src.startsWith(window.location.origin))
+       .filter(src => src && 
+          !src.startsWith(window.location.origin))
        .join('\n')
  )
 {% endhighlight %}

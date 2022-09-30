@@ -36,4 +36,3 @@ if (e.target.tagName === 'BUTTON') {
     filterlist(e.target.dataset.tag);
 }
 });
-
