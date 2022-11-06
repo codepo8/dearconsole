@@ -95,7 +95,12 @@ div#snippets {
 }
 ul#snippets {
   margin: 1em 0;
-  padding: 0;
+  padding: 0; 
+}
+@media (min-width:30em) {
+  ul#snippets {
+    column-count: 2;
+  }
 }
 #snippets li > a {
   display:block;
