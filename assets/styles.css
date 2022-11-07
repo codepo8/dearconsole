@@ -98,7 +98,7 @@ ul#snippets {
   padding: 0; 
 }
 @media (min-width:30em) {
-  ul#snippets {
+  .multicolumn {
     column-count: 2;
   }
 }

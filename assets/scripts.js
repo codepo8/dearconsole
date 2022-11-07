@@ -21,16 +21,20 @@ document.querySelector('#snippets')?.addEventListener('click', e => {
     }
 });
 const filterlist = tag => {
-    let all = document.querySelectorAll('#snippets li').length;
+    let all = 0;
     document.querySelectorAll('#snippets li').forEach(li => {
         if (li.classList.contains(tag) || tag === 'all') {
             li.classList.remove('hidden');
+            all++;
         } else {
             li.classList.add('hidden');
-            all--;
         }
     });
-    console.log(all);
+    if (all > 1) {
+        document.querySelectorAll('#snippets').classList.add('multicolumn');
+    } else {
+        document.querySelectorAll('#snippets').classList.remove('multicolumn');
+    }
 };
 
 document.querySelector('#tags')?.addEventListener('click', e => {
