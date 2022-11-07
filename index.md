@@ -3,7 +3,7 @@ title: Dear Console,… - a collection of code snippets to use in the browser co
 layout: index
 ---
 
-<ul id="snippets">
+<ul id="snippets" class="multicolumn">
 {% for s in site.scripts %}
   {% if s.name == "Say hello world" %}
     {% continue %}

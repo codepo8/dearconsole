@@ -22,6 +22,7 @@ document.querySelector('#snippets')?.addEventListener('click', e => {
 });
 const filterlist = tag => {
     let all = 0;
+    let parent = document.querySelector('#snippets');
     document.querySelectorAll('#snippets li').forEach(li => {
         if (li.classList.contains(tag) || tag === 'all') {
             li.classList.remove('hidden');
@@ -31,9 +32,9 @@ const filterlist = tag => {
         }
     });
     if (all > 1) {
-        document.querySelectorAll('#snippets').classList.add('multicolumn');
+        parent.classList.add('multicolumn');
     } else {
-        document.querySelectorAll('#snippets').classList.remove('multicolumn');
+        parent.classList.remove('multicolumn');
     }
 };
 
