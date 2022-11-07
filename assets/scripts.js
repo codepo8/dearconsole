@@ -21,13 +21,16 @@ document.querySelector('#snippets')?.addEventListener('click', e => {
     }
 });
 const filterlist = tag => {
+    let all = document.querySelectorAll('#snippets li').length;
     document.querySelectorAll('#snippets li').forEach(li => {
         if (li.classList.contains(tag) || tag === 'all') {
             li.classList.remove('hidden');
         } else {
             li.classList.add('hidden');
+            all--;
         }
     });
+    console.log(all);
 };
 
 document.querySelector('#tags')?.addEventListener('click', e => {
