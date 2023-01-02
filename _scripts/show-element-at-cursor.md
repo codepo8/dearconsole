@@ -7,7 +7,7 @@ tags: html debugging
 ---
 
 {% highlight javascript %}
-document.addEventListener(±mousemove±, e => {
+document.addEventListener('mousemove', e => {
     console.log(
         document.elementFromPoint(e.x,e.y)
     )
