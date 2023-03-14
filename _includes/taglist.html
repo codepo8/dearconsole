@@ -9,6 +9,7 @@
     {% assign taglist = taglist | split: ',' | sort | uniq %}
     <button data-tag="all">All topics</button>
     {% for tag in taglist %}
+    {% if tag == '' %} {% continue %} {% endif %}
     <button data-tag="{{ tag }}">{{ tag }}</button>
     {% endfor %}
 </div>
